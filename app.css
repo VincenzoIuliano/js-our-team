@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.debug {
+    border: 1px solid blue;
+}
+
+figure {
+    max-width: 120px;
+}
+
+.empCard {
+    background-color: black;
+    color: white;
+}
+
+.empInfo {
+    margin-left: auto;
+}
+   

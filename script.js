@@ -36,3 +36,10 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+const teamEmp = document.getElementById('teamEmp')
+console.log(teamEmp)
+
+let newCard = document.createElement('div')
+teamEmp.innerHTML = newCard
+
