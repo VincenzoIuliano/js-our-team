@@ -5,7 +5,7 @@
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 
@@ -17,12 +17,15 @@ figure {
     max-width: 120px;
 }
 
-.empCard {
+.cards {
     background-color: black;
     color: white;
 }
 
-.empInfo {
-    margin-left: auto;
+.card_info {
+    margin-top: 10px;
 }
-   
+
+.user_mail {
+    color: dodgerblue;
+}

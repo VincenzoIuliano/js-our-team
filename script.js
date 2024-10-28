@@ -40,6 +40,61 @@ const teamMembers = [
 const teamEmp = document.getElementById('teamEmp')
 console.log(teamEmp)
 
-let newCard = document.createElement('div')
-teamEmp.innerHTML = newCard
+// let newCard = document.createElement('div')
+// newCard.classList.add("prova")
+// newCard.innerHTML = "CIAO"
+// teamEmp.append(newCard)
 
+const donato = document.getElementById('donato')
+
+//  donato.innerHTML += `<div class="col-4">
+//                 <div class="cards d-flex flex-row gap-3">
+//                     <figure class="card_figure">
+//                         <img src="./img/male1.png" alt="Immagine male1">
+//                     </figure>
+//                     <div class="card_info">
+//                         <h2>Mario Rossi</h2>
+//                         <p>Designer</p>
+//                         <p class="user_mail">pippofrancocomico@gmail.com</p>
+//                     </div>
+//                 </div>
+//             </div>
+//           `
+
+  
+for (let i = 0; i < teamMembers.length; i++) {
+  donato.innerHTML += `<div class="col-4">
+  <div class="cards d-flex flex-row gap-3 mt-5">
+      <figure class="card_figure">
+          <img src="./${teamMembers[i].img}" alt="Immagine male1">
+      </figure>
+      <div class="card_info">
+          <h2>${teamMembers[i].name}</h2>
+          <p>${teamMembers[i].role}</p>
+          <p class="user_mail">${teamMembers[i].email}</p>
+      </div>
+  </div>
+</div>
+`
+  
+}
+
+
+
+
+
+
+// teamEmp.innerHTML += `
+//   <div class="row-cols-4 d-flex empCard flex-grow-1">
+//       <div class="col-4">
+//           <figure>
+//               <img src="./img/female1.png" alt="Immagine della ragazza 1">
+//           </figure>
+//       </div>
+//       <div class="col-8 empInfo">
+//           <h2>Pippo Franco</h2>
+//           <p>Comico<p>
+//           <span>Email</span>
+//       </div>     
+//   </div>
+// `
